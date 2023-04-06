@@ -1,0 +1,40 @@
+{
+  "uuSubAppDataStore": {
+    "primary": {
+      "type": "uuAppObjectStore",
+      "realization": "MongoDB",
+      "schemaMap": {
+        "pilotLogbook": {
+          "realization": "dao/LogbookMainMongo",
+          "maxNoi": 1
+        },
+        "logbookEntry": {
+          "realization": "dao/LogbookEntryMongo",
+          "maxNoi": 10000
+        },
+        "aircraft": {
+          "realization": "dao/AircraftMongo",
+          "maxNoi": 100
+        },
+        "place": {
+          "realization": "dao/PlaceMongo",
+          "maxNoi": 200
+        },
+        "pilot": {
+          "realization": "dao/PilotMongo",
+          "maxNoi": 400
+        }
+      }
+    },
+    "binary": {
+      "type": "uuAppBinaryStore",
+      "realization": "MongoDB",
+      "schemaMap": {
+        "pilotImage": {
+          "realization": "dao/PilotImageMongo",
+          "maxNoi": 1024
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "{asid}": {
+    "profileList": ["AsidAuthorities", "AsidExecutives", "AsidLicenseOwner", "Public"],
+    "useCaseMap": {
+    }
+  },
+  "*": {
+    "profileList": ["Authority", "Authorities", "Executives", "Readers", "AwidLicenseOwner"],
+    "useCaseMap": {
+      "sys/uuAppWorkspace/init": {
+        "sysStateList": ["created", "assigned"],
+        "profileList": ["AwidLicenseOwner"]
+      },
+      "sys/uuAppWorkspace/load": {
+        "sysStateList": ["active"],
+        "profileList": ["Authority", "Authorities", "Executives", "Readers"]
+      },
+      "sys/uuAppWorkspace/loadBasicData": {
+        "sysStateList": ["active"],
+        "profileList": ["Authority", "Authorities", "Executives", "Readers"]
+      },
+      "defaultUve": {
+        "profileList": ["Authority", "Authorities", "Executives", "Readers"]
+      },
+      "sys/uuAppWorkspace/initUve": {
+        "sysStateList": ["created"],
+        "profileList": ["Authority", "Authorities", "Executives", "Readers", "AwidLicenseOwner"]
+      },
+      "logbookEntry/list": {
+        "sysStateList": ["active"],
+        "profileList": ["Authority", "Authorities", "Executives", "Readers"]
+      },
+      "logbookEntry/create": {
+        "sysStateList": ["active"],
+        "profileList": ["Authority", "Authorities", "Executives"]
+      },
+      "logbookEntry/get": {
+        "sysStateList": ["active"],
+        "profileList": ["Authority", "Authorities", "Executives", "Readers"]
+      },
+      "logbookEntry/update": {
+        "sysStateList": ["active"],
+        "profileList": ["Authority", "Authorities", "Executives"]
+      },
+      "logbookEntry/delete": {
+        "sysStateList": ["active"],
+        "profileList": ["Authority"]
+      },
+      "pilot/create": {
+        "sysStateList": ["active"],
+        "profileList": ["Authority", "Authorities", "Executives"]
+      },
+      "pilot/list": {
+        "sysStateList": ["active"],
+        "profileList": ["Authority", "Authorities", "Executives", "Readers"]
+      },
+      "place/create": {
+        "sysStateList": ["active"],
+        "profileList": ["Authority", "Authorities", "Executives"]
+      },
+      "place/list": {
+        "sysStateList": ["active"],
+        "profileList": ["Authority", "Authorities", "Executives", "Readers"]
+      },
+      "aircraft/create": {
+        "sysStateList": ["active"],
+        "profileList": ["Authority", "Authorities", "Executives"]
+      },
+      "aircraft/list": {
+        "sysStateList": ["active"],
+        "profileList": ["Authority", "Authorities", "Executives", "Readers"]
+      },
+      "pilotLogbook/get": {
+        "sysStateList": ["active"],
+        "profileList": ["Authority", "Authorities", "Executives", "Readers"]
+      }
+    }
+  }
+}

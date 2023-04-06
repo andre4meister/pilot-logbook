@@ -1,0 +1,90 @@
+{
+  "{vendor}-{uuApp}-{uuSubApp}": {
+    "useCaseMap": {
+      "sys/uuAppWorkspace/init": {
+        "realization": "api/controllers/LogbookMainController.init",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "sys/uuAppWorkspace/load": {
+        "realization": "api/controllers/LogbookMainController.load",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "sys/uuAppWorkspace/loadBasicData": {
+        "realization": "api/controllers/LogbookMainController.loadBasicData",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "defaultUve": {
+        "realization": "index.html",
+        "httpMethod": "GET",
+        "type": "UVE"
+      },
+      "sys/uuAppWorkspace/initUve": {
+        "realization": "index.html",
+        "httpMethod": "GET",
+        "type": "UVE"
+      },
+      "logbookEntry/create": {
+        "realization": "api/controllers/LogbookEntryController.create",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "logbookEntry/list": {
+        "realization": "api/controllers/LogbookEntryController.list",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "logbookEntry/get": {
+        "realization": "api/controllers/LogbookEntryController.get",
+        "httpMethod": "GET",
+        "type": "CMD",
+        "dtoInAuditMap": {
+          "id": "$.id"
+        }
+      },
+      "logbookEntry/delete": {
+        "realization": "api/controllers/LogbookEntryController.delete",
+        "httpMethod": "POST",
+        "type": "CMD",
+        "dtoInAuditMap": {
+          "id": "$.id"
+        }
+      },
+      "logbookEntry/update": {
+        "realization": "api/controllers/LogbookEntryController.update",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "aircraft/create": {
+        "realization": "api/controllers/AircraftController.create",
+        "httpMethod": "POST"
+      },
+      "aircraft/list": {
+        "realization": "api/controllers/AircraftController.list",
+        "httpMethod": "GET"
+      },
+      "place/create": {
+        "realization": "api/controllers/PlaceController.create",
+        "httpMethod": "POST"
+      },
+      "place/list": {
+        "realization": "api/controllers/PlaceController.list",
+        "httpMethod": "GET"
+      },
+      "pilot/create": {
+        "realization": "api/controllers/PilotController.create",
+        "httpMethod": "POST"
+      },
+      "pilot/list": {
+        "realization": "api/controllers/PilotController.list",
+        "httpMethod": "GET"
+      },
+      "pilotLogbook/get": {
+        "realization": "api/controllers/LogbookMainController.get",
+        "httpMethod": "GET"
+      }
+    }
+  }
+}
