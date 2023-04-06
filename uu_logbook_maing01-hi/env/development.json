@@ -1,0 +1,10 @@
+{
+  "port": 1234,
+  "autoOpenInBrowser": false,
+  "basePath": "/uu-logbook-maing01/0/",
+  "useMockData": false,
+  "uu5Environment": {
+    "callsBaseUri": "http://localhost:8080/uu-logbook-maing01/22222222222222222222222222222222/",
+    "uu5g05_trustedUriRegExp": "^https?://localhost(:[0-9]+)?/|^https://([a-z][a-z0-9\\-]{0,61}[a-z0-9][.]|[a-z][.])?plus4u[.]net(:[0-9]+)?(?=[/#?]|$)"
+  }
+}
